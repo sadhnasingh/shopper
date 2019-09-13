@@ -1,0 +1,15 @@
+default: &default
+  adapter: postgresql
+  username: root
+  password: root
+  host: localhost
+  port: 5432
+  database: shopper
+
+
+development:
+  <<: *default
+  database: shopper
+production:
+  <<: *default
+  database: shopper
